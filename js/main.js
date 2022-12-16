@@ -348,5 +348,10 @@
 let minute = 1
 
 if (minute >= 0 && minute <= 15) {
-   
+
+}
+let minute1 = 1
+
+if (minute >= 0 && minute <= 15) {
+
 }
