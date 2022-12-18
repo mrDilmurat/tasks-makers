@@ -319,6 +319,26 @@
 // minute = 30  -> 3
 
 
+//const minute = 30;
+
+//switch (true) {
+//   case minute >= 1 && minute < 15:
+//      console.log("1");
+//      break;
+//   case minute >= 15 && minute < 30:
+//      console.log("2");
+//      break;
+//   case minute >= 30 && minute < 45:
+//      console.log("3");
+//      break;
+//   case minute >= 45 && minute <= 60:
+//      console.log("4");
+//      break;
+//   default:
+//      console.log("Число не верное");
+//}
+
+
 //let minute = 15;
 //if (minute >= 0 && minute <= 15) {
 //  console.log(`Время ${minute} поподает в первую четверть`);
@@ -345,13 +365,157 @@
 //   console.log('Число не верное')
 //}
 
-let minute = 1
+//let minute = 3;
+//if (minute == 1) {
+//   console.log('minute =', parseInt(15), '->', parseInt(1));
+//} else if (minute == 2) {
+//   console.log('minute =', parseInt(30), '->', parseInt(2));
+//} else if (minute == 3) {
+//   console.log('minute =', parseInt(45), '->', parseInt(3));
+//} else if (minute == 4) {
+//   console.log('minute = 60 -> 4');
+//} else {
+//   console.log('minute =', parseInt(60), '->', parseInt(4));
+//}
 
-if (minute >= 0 && minute <= 15) {
 
-}
-let minute1 = 1
+//Задание 24
+//Создайте переменную num с числом, состоящим из 6 - ти цифр.Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр.Если это так - выведите true, в противном случае выведите false.
 
-if (minute >= 0 && minute <= 15) {
 
-}
+//let num = 444444;
+
+//let arr = ('' + num).split('');
+//if ((arr[0] + arr[1] + arr[2]) === (arr[3] + arr[4] + arr[5])) {
+//   console.log(true);
+//} else {
+//   console.log(false);
+//}
+
+
+
+//Задание 25
+//В переменной month лежит какое - то число в диапазоне от 1 до 12. Определите в какую пору года попадает этот месяц(зима, лето, весна, осень).
+//Так же если число не находится в диапазоне от 1 до 12, то выведите
+//"Число не верное"
+
+
+//let month = 6;
+
+//if (month === 1) {
+//   console.log('зима');
+//} else if (month === 2) {
+//   console.log('зима');
+//} else if (month === 3) {
+//   console.log('весна');
+//} else if (month === 4) {
+//   console.log('весна');
+//} else if (month === 5) {
+//   console.log('весна');
+//} else if (month === 6) {
+//   console.log('лето');
+//} else if (month === 7) {
+//   console.log('лето');
+//} else if (month === 8) {
+//   console.log('лето');
+//} else if (month === 9) {
+//   console.log('осень');
+//} else if (month === 10) {
+//   console.log('осень');
+//} else if (month === 11) {
+//   console.log('осень');
+//} else if (month === 12) {
+//   console.log('зима');
+//} else {
+//   console.log("Число не верное");
+//};
+
+
+
+
+
+//Задание 26
+//Создайте два обьекта obj1 и obj2
+//Если объекты равны, то выведите
+//"Объекты равны"
+//Если нет, то выведите
+//"Объекты не равны, т.к объект - ссылочный тип данных"
+//Если title первого объекта равен title второго, то выведите
+//"названия одинаковые"
+//если нет, то выведите
+
+//"названия не одинаковые"
+//let obj1 = { title: "Hello world" }
+//let obj2 = { title: "Hello world" }
+
+
+//let obj1 = { title: "Hello world" };
+//let obj2 = { title: "Hello world" };
+
+//if (obj1 == obj2) {
+//   console.log("Объекты равны");
+//} else {
+//   console.log("Объекты не равны, т.к объект - ссылочный тип данных");
+//}
+//if (obj1.title == obj2.title) {
+//   console.log("названия одинаковые");
+//} else {
+//   console.log("названия не одинаковые");
+//}
+
+//?======================================================================
+
+//Экстра таск 1
+//Создайте переменную data, в которой хранится один из 8 типов данных.
+
+//Напишите код, который выводит в консоль строку:
+
+//It's number 
+//если в переменной data хранится число, или:
+
+//It's boolean 
+//если в переменной булевый тип данных.
+
+//Если же в data лежит какое - то другое значение, то выводите:
+
+//It's not number and boolean 
+
+//let data = '0';
+//if (typeof data == "number") {
+//   console.log("It's number")
+//} else if (typeof data == "boolean") {
+//   console.log("It's boolean")
+//} else {
+//   console.log("It's not number and boolean")
+//}
+
+
+
+//Экстра таск 2
+//Создайте объект obj, с ключами firstNum и secondNum.
+
+//Напишите код который проверяет firstNum и secondNum:
+
+//в случае если firstNum и secondNum не равны нулю, перемножьте числа и выведите в консоль результат
+//если же одно из чисел равно нулю, то выведите в консоль их сумму
+//если же оба значения равные нулю, выведите в консоль булево: false
+//если же значением secondNum является булево false, вывести сумму
+
+
+//   let obj = {
+//    firstNum: 2,
+//    secondNum: 0
+// }
+
+// if (obj.firstNum != 0 && obj.secondNum != 0) {
+//    console.log(obj.firstNum * obj.secondNum)
+// } else if (obj.firstNum == 0 || obj.secondNum == 0) {
+//     console.log(obj.firstNum + obj.secondNum)
+// } else if (obj.firstNum == 0 && obj.secondNum == 0) {
+//    console.log(false)
+// } else if (obj.secondNum == false) {
+//    console.log(obj.firstNum + obj.secondNum)
+// }
+
+
+
